@@ -327,10 +327,17 @@ class BrezziDouglasMariniCubeEdge(VectorFiatElement):
     def __init__(self, cell, degree):
         super(BrezziDouglasMariniCubeEdge, self).__init__(FIAT.BrezziDouglasMariniCubeEdge(cell, degree))
 
+class TrimmedBrezziDouglasMariniCubeEdge(VectorFiatElement):
+    def __init__(self, cell, degree):
+        super(TrimmedBrezziDouglasMariniCubeEdge, self).__init__(FIAT.TrimmedBrezziDouglasMariniCubeEdge(cell, degree))
 
 class BrezziDouglasMariniCubeFace(VectorFiatElement):
     def __init__(self, cell, degree):
         super(BrezziDouglasMariniCubeFace, self).__init__(FIAT.BrezziDouglasMariniCubeFace(cell, degree))
+
+class TrimmedBrezziDouglasMariniCubeFace(VectorFiatElement):
+    def __init__(self, cell, degree):
+        super(TrimmedBrezziDouglasMariniCubeFace, self).__init__(FIAT.TrimmedBrezziDouglasMariniCubeFace(cell, degree))
 
 
 class BrezziDouglasFortinMarini(VectorFiatElement):
